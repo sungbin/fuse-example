@@ -2,7 +2,7 @@
   {
     "inode": 0,
     "type" : "dir",
-    "entrues" : 
+    "entries" : 
     [
       {"name": "hello", "inode": 1},
       {"name": "d1", "inode": 2}
@@ -16,7 +16,7 @@
   {
     "inode": 2,
     "type" : "dir",
-    "entrues" : 
+    "entries" : 
     [
       {"name": "d2", "inode": 3}
     ]
@@ -24,7 +24,7 @@
   {
     "inode": 3,
     "type" : "dir",
-    "entrues" : 
+    "entries" : 
     [
       {"name": "bye", "inode": 4},
       {"name": "hello", "inode": 1}
