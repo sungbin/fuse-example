@@ -11,7 +11,7 @@ set(CMAKE_EXPORT_COMPILE_COMMANDS 1)
 
 find_package(FUSE REQUIRED)
 
-include_directories(${FUSE_INCLUDE_DIR})
-add_executable(fuse-example fuse-example.c)
+include_directories(${FUSE_INCLUDE_DIR} "cJSON/include")
+add_executable(fuse-example fuse-example.c "cJSON/src/cJSON.c")
 target_link_libraries(fuse-example ${FUSE_LIBRARIES})
-
+file(COPY input.json DESTINATION ${CMAKE_BINARY_DIR})
