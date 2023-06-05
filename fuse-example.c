@@ -128,7 +128,7 @@ void parse_json(const char* json_string, Entry*** entries, int* num_entries) {
             entry->data = strdup(data->valuestring);
         }
 
-        cJSON* entries = cJSON_GetObjectItem(item, "entrues");
+        cJSON* entries = cJSON_GetObjectItem(item, "entries");
         if (entries != NULL && cJSON_IsArray(entries)) {
             int num_sub_entries = cJSON_GetArraySize(entries);
             entry->entries = (Entry**)malloc(num_sub_entries * sizeof(Entry*));
